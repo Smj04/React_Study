@@ -1,0 +1,5 @@
+cmd에서 ex) E:     cd E:\React 
+-> npx create-react-app [프로젝트 폴더명]
+눈에미소 안과 스마일 라식 200
+npm start
+ctrlc 끝내기
