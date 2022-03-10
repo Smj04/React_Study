@@ -10,4 +10,6 @@ ReactDOM.render(
 );
 
 - 연결될 파일<br>
-import ReactDom from 'react-dom';
+import ReactDom from 'react-dom';<br>
+/*코드 작성란*/<br>
+ReactDom.render(<태그/>,document.getElementById('root'));
