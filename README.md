@@ -6,6 +6,8 @@ import ReactDOM from 'react-dom';
 
 
 ReactDOM.render(
-  //코드 작성란
   document.getElementById('root')
 );
+
+- 연결될 파일<br>
+import ReactDom from 'react-dom';
