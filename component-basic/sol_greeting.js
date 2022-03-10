@@ -6,7 +6,10 @@ const Greeting = function(props){
 function Greeting({name}){
     return <h1>Hello, {name}</h1>
 }*/
-
+//render 태그안에서 props값을 할당
 ReactDOM.render(
-<Greeting name ="김미림" age={20}/>, //render 태그안에서 props값을 할당
+    <div>
+<Greeting name ="김미림"/> 
+<Greeting age={20}/>
+    </div>,
 document.getElementById('root'));
