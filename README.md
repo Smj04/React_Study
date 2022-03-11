@@ -13,6 +13,6 @@
 
 - /*코드 작성란*/
 
-- ReactDom.render(<태그/>,document.getElementById('root'));
+- ReactDom.render(< 컴포넌트 />,document.getElementById('root'));
 
 `터미널에 npm start로 실행`
