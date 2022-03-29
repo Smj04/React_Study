@@ -17,19 +17,23 @@ const PersonProfile = function({ name, age, gender, profile, highlight }) {
     )
 }
 
+const anotherPerson = {
+    name : 'Jane',
+    age : 28,
+    gender : 'femele',
+    profile: 'https://randomuser.me/api/portraits/women/75.jpg'
+}
+
+const {name, age, gender, ...rest} = anotherPerson
+console.log(rest);
+
 //render할때 매개변수에 링크를 넘길 수 있다
 ReactDom.render(
     <div>
     <PersonProfile name='John' age={35} gender='male'
     profile='https://randomuser.me/api/portraits/men/75.jpg' />
-    </div>, document.getElementById('root')
+    </div>, 
+   
+    document.getElementById('root')
 )
-// {/* 따로 props 전달 타입에 제약이 있는 것은 아니며 다양한 값을 전달 가능 */}
-// <ComponentWithProps value="Hello" />
-// {/* 문자열이 아니므로 중괄호를 사용하여 값 전달 */}
-// <ComponentWithProps value={1} />        //만약 여기서 value = "1"로 저장하면 문자열 1
-// {/* 보통은 여러 정보를 담을 수 있는 객체를 전달 */}
-// <ComponentWithProps value={{ a: 1, b: "React" }} />
-// {/* 필요한 경우 함수, 메서드도 전달 가능 */}
-// <ComponentWithProps value={() => { }} />
 
