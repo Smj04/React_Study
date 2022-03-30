@@ -45,7 +45,7 @@ const TodoList = function({ todos, handleTodoStatusToggle, handleTodoRemove }) {
         }
         const TodoApp = function(props) {
             const [todos, setTodos] = useState([
-            { completed: false, text: '리액트 공부하기' },
+            { completed: false, text: '리액트 공부하기' },         //미리 데이터값 두개할당
             { completed: true, text: 'ES6 문법 공부하기' }
             ])
             const handleTodoAdd = newTodo => setTodos(todos => todos.concat(newTodo))
